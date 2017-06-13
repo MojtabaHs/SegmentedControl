@@ -25,8 +25,8 @@ class SPSegmentedControl: UIControl {
     
     var indicatorView: UIView = UIView()
     var cells: [SPSegmentedControlCell] = []
-    var styleDelegate: SPSegmentControlCellStyleDelegate?
-    var delegate: SPSegmentControlDelegate?
+    weak var styleDelegate: SPSegmentControlCellStyleDelegate?
+    weak var delegate: SPSegmentControlDelegate?
     var defaultSelectedIndex: Int = 0
     var isUpdateToNearestIndexWhenDrag: Bool = true
     
