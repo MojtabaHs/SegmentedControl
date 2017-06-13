@@ -208,7 +208,7 @@ class SPSegmentedControl: UIControl {
 
 extension SPSegmentedControl: UIGestureRecognizerDelegate {
     
-    func pan(_ gestureRecognizer: UIPanGestureRecognizer!) {
+    public func pan(_ gestureRecognizer: UIPanGestureRecognizer!) {
         switch gestureRecognizer.state {
         case .began:
             self.initialIndicatorViewFrame = self.indicatorView.frame
