@@ -258,7 +258,7 @@ extension SPSegmentedControl: UIGestureRecognizerDelegate {
         }
     }
     
-    func leftSwipe(_ gestureRecognizer: UISwipeGestureRecognizer!) {
+    public func leftSwipe(_ gestureRecognizer: UISwipeGestureRecognizer!) {
         switch gestureRecognizer.state {
         case.ended:
             self.selectedIndex = selectedIndex - 1
@@ -267,7 +267,7 @@ extension SPSegmentedControl: UIGestureRecognizerDelegate {
         }
     }
     
-    func rightSwipe(_ gestureRecognizer: UISwipeGestureRecognizer!) {
+    public func rightSwipe(_ gestureRecognizer: UISwipeGestureRecognizer!) {
         switch gestureRecognizer.state {
         case.ended:
             self.selectedIndex = selectedIndex + 1
